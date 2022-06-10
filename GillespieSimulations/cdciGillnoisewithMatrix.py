@@ -184,9 +184,10 @@ def runGillespie(state, T, N, gammas, alphas, rhos, sigmas, rnd_seed, finalState
 
     quorum_reached = False
     while t < T:
+        previous_state = copy.deepcopy(state)
+
         sim_finished, time_step = gillespieStep(state, N, gammas, alphas, rhos, sigmas, vectorsOfChange, T - t)
         # update time variable
-        previous_state = copy.deepcopy(state)
         t += time_step
         # update SPD matrix which keeps track of the time spent in each state
         spd[int(previous_state[0])][int(previous_state[1])] += time_step
