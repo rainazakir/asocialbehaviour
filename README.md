@@ -1,4 +1,4 @@
-# CIvsVM study in precense of Asocial Behavior
+# CIvsVM study in presence of Asocial Behavior
 
 This repository contains the codes used in the study: "Cross-inhibition leads to group consensus despite the presence of strongly opinionated minorities and asocial behaviour" by Andreagiovanni Reina, Raina Zakir, Eliseo Ferrante, and Giulia De Masi.
 
